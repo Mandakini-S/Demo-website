@@ -1,0 +1,459 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height:50px;
+}
+
+/* Navigation bar */
+#navbar{
+    
+    flex-direction: row;
+    font-family: 'Patrick Hand', cursive;
+    
+}
+.menu { display: flex;
+}
+nav {
+    background-color: rgb(170 197 192);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 12px 20px;
+  }
+
+
+.item{
+    display: flex;
+    align-content: center;
+    
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    ;
+}
+ul li{
+    margin:10px;
+  
+
+}
+
+ul li a{
+    color: rgb(187, 53, 53);
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+   
+}
+ul li a:: after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(170 197 192);
+    transition: 0.15s ease-in-out;
+    
+}
+span li a :hover:after { width: 100%;}
+ul li a:hover{
+    color: rgb(170 197 192);
+    background:rgb(187, 53, 53);
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+} 
+
+
+.open-menu , .close-menu{
+    position: absolute;
+color: rgb(187, 53, 53);
+cursor: pointer;
+font-size: 1.5rem;
+display: none;
+
+}
+.open-menu{
+    top : 50%;
+    right:20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{display:none;}
+
+#logo{
+    margin:5px;
+    padding: 1px;
+    display: flex;
+        /* align-items: center; */
+}
+/* Navigation Bar : LOGO Image */
+#logo img{
+    
+    height:50px;
+    width:50px;
+    
+}
+
+/* Section */
+#home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:569px;
+    justify-content: center;
+    align-items: center;
+   
+}
+#home::before{
+    content: "";
+    height:100%;
+    width:100%;
+    background:url('../Images/bg_momo.jpg' ) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+section #h-primary{
+    color:rgb(245, 242, 242);
+    
+}
+
+#home h1{
+color:rgb(187, 53, 53);
+    font-size: 2.9rem;
+    padding:3rem;
+    /* text-shadow: 1px 1px  black; */
+    font-family: 'Patrick Hand', cursive;
+    
+}
+#home p{
+    font-family: 'Patrick Hand', cursive;
+    color:rgb(14, 13, 13);
+    /* text-shadow: 2px 2px 2px rgb(187, 53, 53); */
+    font-size: 1.5rem;
+    padding: 1px;
+    text-align: center;
+}
+
+.btn{
+    /* color:rgb(248, 237, 237); */
+    margin:10px;
+    padding:5px;
+    border:2px solid black;
+    background-color: rgb(187, 53, 53);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+    animation-name: Welcome;
+    animation-duration:0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Welcome{
+    from{
+    
+    }
+    to{
+        color:rgb(245, 242, 242);
+        font-weight: bold;
+
+    }
+}
+.btn:hover{
+    color:rgb(245, 242, 242);
+    font-weight: bold;
+}
+/* Utility section */
+.text-center{
+    text-align: center;
+    /* font-family: 'Patrick Hand', cursive; */
+
+}
+.primary-center{
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+        font-size: 3rem;
+        color:rgb(187, 53, 53);
+        text-shadow: 2px 2px black;
+}
+.h-secondary{ 
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+
+}
+/* Service section */
+
+.services{
+    display: flex;
+    margin:25px;
+    
+}
+/* .service-container h1{
+    text-align: center;
+    font-size: 3rem;
+} */
+.service-container .services .box{
+    border: 3px solid brown;
+    margin:5px 5px;
+    padding: 5px;
+    border-radius: 23px;
+    box-shadow: 3px 3px 5px brown ;
+    background-color: rgb(231 233 233);
+    ;
+}
+
+.service-container .services .box h2{
+    text-align: center;
+}
+.service-container .services .box img{
+    margin:auto;
+    display: block;
+    width: 125px;
+/* height:160px; */
+padding: 5px;
+
+}
+
+.services p{
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    padding: 3px;
+}
+
+/* Client section */
+#client-section  {
+   position: relative;
+}
+ 
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background:url('../Images/random.jpg') ;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.7;
+ }
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#client-section .client-item {
+    padding: 20px;
+    margin: 20px;
+    font-size: 60px;
+}
+
+
+/* contact section */
+#contact-section{
+    position: relative;
+    color: black;
+}
+
+#contact-section::before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:100%;
+    background:url('../Images/internet-g4cb1fb86d_1920.jpg');
+    z-index: -1;
+    opacity: 0.2;
+
+}
+#contact-box{
+    color: rgb(187, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box form {
+   width:45%;
+
+    
+}
+#contact-box form label {
+    font-size: 1.3rem;
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(187, 53, 53);
+    font-weight: bold;
+ }
+
+
+#contact-box input ,
+#contact-box textarea {
+    color: rgb(187, 53, 53);
+    width:100%;
+    padding:0.5rem;
+    /* Margin:10px; */
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+}
+#contact-box form button label {
+    color:rgb(170 197 192);
+    font-family: 'Patrick Hand', cursive;
+    z-index: 6;
+}
+
+.form-group button{
+    width:100%;
+    border:2px solid black;
+    background-color: rgb(187, 53, 53);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+
+    
+}
+
+
+footer{
+    background-color: rgb(170 197 192);
+    color:rgb(187, 53, 53);
+    height:100%;
+    width:100%;
+    font-family: 'Patrick Hand', cursive;
+    padding:10px;
+    margin: 2px;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+@media (max-width: 952px){
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(231 233 233);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+
+/* home section */
+
+#home{
+    height:1000px;
+    padding:20px;
+    text-align: center;
+}
+#home p{
+    font-size: 1.5rem;
+}
+
+#home::before{
+    height:1012px;
+}
+#home h1{
+    font-size: 2rem;
+}
+
+
+.btn{
+    font-size: 1rem;
+    padding:3px 12px;
+}
+
+/* services section */
+.services{
+    flex-direction: column;
+
+}
+
+/* clients section */
+#clients{
+    flex-wrap: wrap;
+}
+
+/* #client-section::before {
+   
+    
+   
+ } */
+
+/* contact us section */
+
+
+/* footer section */
+
+/* Utility classes */
+
+
+
+
+
+
+    }
+    
+.icon{
+    /* color:rgb(187, 53, 53); */
+    color:black;
+}
+

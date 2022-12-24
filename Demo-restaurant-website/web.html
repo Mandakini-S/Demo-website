@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food ordering service
+    </title>
+    <link rel="stylesheet" href="CSS\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" media="screen and (max-width:952px)" href="CSS\mobile.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+
+<body>
+    <nav id="navbar">
+           <li id="logo"><a href="#"><img src="Images/logo.png" alt="khawopiyo"></a></li> 
+            <input type="checkbox" id="check">
+                              
+        <ul><span class="menu">
+
+            <li class="item"><a href="#home">HOME</a>
+            </li>
+            <li class="item"><a href="#service-container">OUR SERVICES</a>
+            </li>
+            <li class="item"><a href="#about">ABOUT</a>
+            </li>
+            <li class="item"><a href="#client-section">CONTACT </a>
+            </li>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+
+        </span>
+        <label for="check" class ="open-menu"><i class="fas fa-bars"></i></label>
+
+        </ul>   
+    
+    </nav>
+
+    
+
+    <section id="home">
+        <h1 id="h-primary">Welcome to Royal Meal!</h1>
+        <p>where we serve delicious continental dishes in a cozy and inviting atmosphere. From classic italian entrees to daily specials, our menu has something for everyone. Stop by for a quick bite or stay for a leisurely dinner, and don't forget to try one of our refreshing beers, wines, or cocktails. We look forward to serving you soon!"</p>
+
+        <button class="btn">Order Now!</button>
+    </section>
+
+    <section class="service-container" id ="service-container">
+        <h1 class="primary-center">
+            Our Services
+        </h1>
+        <div class="services">
+            <div class="box">
+                <img src="Images\momo.jpg" alt="Pizza">
+                <h2 class="h-secondary">Veg Item</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque cumque nostrum autem asperiores
+                    dolores inventore sequi veniam repellendus aspernatur. Tempore ratione mollitia, eum officiis
+                    placeat vel commodi iste optio quas!
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="Images\pizza.jpg" alt="Pizza">
+                <h2 class="h-secondary">Non-Veg Item</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque cumque nostrum autem asperiores
+                    dolores inventore sequi veniam repellendus aspernatur. Tempore ratione mollitia, eum officiis
+                    placeat vel commodi iste optio quas!
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="Images\chatpat.jpg" alt="Pizza">
+                <h2 class="h-secondary">Street-food</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque cumque nostrum autem asperiores
+                    dolores inventore sequi veniam repellendus aspernatur. Tempore ratione mollitia, eum officiis
+                    placeat vel commodi iste optio quas!
+                </p>
+            </div>
+        </div>
+    </section>
+
+<section id="client-section" class="client-section">
+<h1 class="primary-center">Connect with us:</h1>
+<div id="clients">
+<div class="client-item"><a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook-f"></i></a></div>
+
+<div class="client-item"><a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a></div>
+
+<div class="client-item"><a href="https://web.whatsapp.com/" target="_blank"><i class=" icon fa-brands fa-whatsapp"></i></a></div>
+<div class="client-item"><a href="https://ices.edu.np/" target="_blank"><i class="icon fa-solid fa-globe"></i></a></div>
+
+</div>
+</section>
+
+<section id="contact-section">
+    <h1 class="primary-center">Contact Us</h1>
+    <div id="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name.">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email.">
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" name="phone_number" id="phone_number" placeholder="Enter your phone number.">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+            </div>
+            <button type="submit"></button>
+            <div class="form-group">
+                <!-- <label for="submit">Submit</label> -->
+                <button id="submit" type="submit"> <label for="submit">Submit</label></button>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+
+<footer>
+    <div class="text-center">
+        Copyright &copy; www.royalmeal.com. All rights reserved !
+    </div>
+</footer>
+
+</html>
